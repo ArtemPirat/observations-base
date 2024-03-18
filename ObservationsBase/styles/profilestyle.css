@@ -1,0 +1,391 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url(backgrounds/particlesjs-examples.gif);
+    background-size: cover; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.account {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: -150px;
+}
+
+.full-profile {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: space-around;
+    width: 1200px;
+    max-width: 1300px;
+    height: 500px;
+    margin: 10px ;
+    background-color: #c4ced284;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.additional-elements {
+    margin-left: 10px;
+    align-items: center;
+    background-color: #c4ced284;
+    top: 50%; 
+    width: 1200px;
+    padding: 20px; 
+    height: 140px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.guide-header,
+.tutorial-header,
+.sneakpeek-header,
+.code-snippet-header {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Brush Script MT', cursive;
+    font-weight: bolder;
+    padding: 5px;
+}
+
+.guide-block,
+.tutorial-block,
+.sneakpeek-block,
+.code-snippet-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.create-button,
+.view-button {
+    display: flex;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #d9d9d989;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 5px solid snow;
+    transition: background-color 0.3s;
+    transition: transform 0.3s;
+    transition: border-width 0.3s ease;
+}
+
+.create-button:hover,
+.view-button:hover {
+    border-width: 2px;
+    transform: scale(1.1); 
+    background: #9280ce;
+}
+
+.profile-settings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    float: left;
+    box-shadow: 0 0 25px rgba(141, 80, 246, 0.647); 
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.buttons-container {
+    width: 150px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.profile-button {
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #d9d9d989;
+    color: #fff;
+    border: 1px solid rgba(245, 245, 245, 0.733);
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: small;
+    transition: transform 0.3s;
+}
+
+.edit-account-image {
+    width: 50px;
+    height: 50px;
+    padding: 2px;
+}
+
+.logout-image {
+    width: 48px;
+    height: 50px;
+}
+
+.button:hover {
+    transform: scale(1.1);
+}
+
+.profile-info {
+    max-width: 850px;
+    text-align: left;
+    display: flex;
+    gap: 110px;
+    justify-content: space-evenly;
+}
+
+.profile-main {
+    width: 550px;
+    align-items: center;
+    padding: 10px;
+    height: 310px;
+    max-height: 520px;
+    background-color: #d9d9d989;
+    border-radius: 15px;
+    transition: height 0.5s ease-in-out;
+}
+
+.expanded {
+    height: 460px; 
+    transition: height 0.5s ease-in-out;
+}
+
+.card-body {
+    display: none; 
+}
+
+.profile-main h1 {
+    margin: 10px 0;
+    color: #333;
+}
+
+.profile-main ul {
+    list-style: none;
+    padding: 0;
+    display: block;
+    justify-content: left;
+}
+
+.profile-info li {
+    padding: 15px 0;
+    color: #555;
+    font-weight: bolder;
+    border-bottom: 3px solid rgba(139, 139, 139, 0.584);
+}
+
+.card-header {
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: rgba(0,0,0,.03);
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    letter-spacing: 3px;
+}
+
+.h3 {
+    font-size: 1.75rem;
+}
+
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
+
+.p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.profile-info span {
+    color: #3498db;
+}
+
+.profile-info li:last-child {
+    border-bottom: none;
+}
+
+.profile-info a {
+    text-decoration: none;
+    color: #3498db;
+    transition: color 0.3s;
+}
+
+.profile-info a:hover {
+    color: #1e87d1;
+}
+
+.OtherInfo {
+    cursor: pointer;
+}
+
+
+.profile-details {
+    display: flex;
+    justify-content: flex-end;
+}
+.square {
+    width: 150px; 
+    height: 150px;
+    border-radius: 15%;
+    background-color: #d9d9d989;
+    margin: 0 10px 10px 0;
+    transition: transform 0.3s;
+}    
+.square:hover {
+    transform: scale(1.1); 
+}
+
+.icons-add-view {
+    width: 64px;
+    height: 64px;
+    max-width: 64px;
+    max-height: 64px;
+    padding-bottom: 10px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  *:focus,
+  *:active {
+    outline: none !important;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .wrapper {
+    width: 65px;
+    height: 500px;
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+  }
+  
+  .wrapper .icon {
+    position: relative;
+    background: #ffffff;
+    border-radius:15px;
+    padding: 15px;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #ffffff;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #ffffff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  
+  .wrapper .icon:hover span,
+  .wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  .wrapper .facebook:hover,
+  .wrapper .facebook:hover .tooltip,
+  .wrapper .facebook:hover .tooltip::before {
+    background: #1877F2;
+    color: #ffffff;
+  }
+  
+  .wrapper .tiktok:hover,
+  .wrapper .tiktok:hover .tooltip,
+  .wrapper .tiktok:hover .tooltip::before {
+    background: #000000;
+    color: #ffffff;
+  }
+  
+  .wrapper .instagram:hover,
+  .wrapper .instagram:hover .tooltip,
+  .wrapper .instagram:hover .tooltip::before {
+    background: #7a21b6;
+    color: #ffffff;
+  }
+  
+  .wrapper .youtube:hover,
+  .wrapper .youtube:hover .tooltip,
+  .wrapper .youtube:hover .tooltip::before {
+    background: #CD201F;
+    color: #ffffff;
+  }
+  
